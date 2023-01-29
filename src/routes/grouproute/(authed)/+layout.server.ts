@@ -5,4 +5,3 @@ export function load({ cookies, url }) {
 		throw redirect(307, `/grouproute/login?redirectTo=${url.pathname}`);
 	}
 }
-

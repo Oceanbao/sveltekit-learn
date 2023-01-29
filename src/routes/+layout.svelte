@@ -2,12 +2,13 @@
 	import '@app/app.css';
 </script>
 
-<header>
-	<nav>
+<header class="">
+	<nav class="flex-wrap place-content-center">
 		<a href="/" class="text-3xl font-bold underline">home</a>
 		<a href="/about" class="text-3xl font-bold underline">about</a>
 		<a href="/expected" class="text-3xl font-bold underline">page with expected error</a>
 		<a href="/unexpected" class="text-3xl font-bold underline">page with unexpected error</a>
+		<a href="/blog" class="text-3xl font-bold underline">blog</a>
 		<a href="/learn" class="text-3xl font-bold underline">learning svelte</a>
 		<a href="/spring" class="text-3xl font-bold underline">spring motion</a>
 		<a href="/optionalparam" class="text-3xl font-bold underline">optional param</a>

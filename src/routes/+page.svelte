@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+	import type { PageData } from './$types';
+
 	import { fly, slide } from 'svelte/transition';
 	import { enhance } from '$app/forms';
 
@@ -27,7 +29,7 @@
 	// - navigate to new page on a redirect response
 	// - render the nearest error page if err
 
-	export let data;
+	export let data: PageData;
 	export let form;
 
 	let creating = false;

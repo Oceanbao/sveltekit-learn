@@ -6,4 +6,3 @@ export const actions = {
 		throw redirect(307, url.searchParams.get('redirectTo') ?? '/');
 	}
 };
-

@@ -9,4 +9,3 @@ export function load({ params }) {
 		greeting: greetings[params.lang ?? 'en']
 	};
 }
-

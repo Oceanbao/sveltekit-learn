@@ -39,4 +39,3 @@
 		timeZone: data.timezone
 	}).format(new Date(data.again))}
 </h1>
-

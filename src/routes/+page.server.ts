@@ -2,10 +2,11 @@ import { redirect, fail } from '@sveltejs/kit';
 import { PASSPHRASE } from '$env/static/private';
 // import { env } from '$env/dynamic/private';
 import * as db from '$lib/server/database';
+import type { PageServerLoad } from './$types';
 
-export function load({ cookies }) {
-  // cookies.delete('allowed');
-  if (cookies.get('allowed')) {
+export const load = (async ({ cookies }) => {
+	// cookies.delete('allowed');
+	if (cookies.get('allowed')) {
 		throw redirect(307, '/welcome');
 	}
 
@@ -20,7 +21,7 @@ export function load({ cookies }) {
 	return {
 		todos
 	};
-}
+}) satisfies PageServerLoad;
 
 // default OR named action
 export const actions = {

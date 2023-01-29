@@ -8,5 +8,3 @@ export async function load({ data }) {
 		message: data.message
 	};
 }
-
-
